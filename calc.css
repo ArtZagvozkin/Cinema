@@ -10,24 +10,24 @@ header {
     background-color: #2b2b2b;
 }
 
-.logo {
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    color: #E4AF00;
-}
-
-.menu li {
-    margin-left: 40px;
+.calc-ttl {
+    text-align: left;
+    font-family: Open Sans;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 33px;
+    font-size: 32px;
+    color: #ffffff;
+    line-height: 49px;
+    margin: 5px 0 0 0;
+}
+
+.lines {
+    text-align: left;
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 49px;
+    margin: 5px 0 0 0;
 }
 
 .navbar-link, .navbar-link:visited, .navbar-link:hover, .navbar-link:link {
@@ -75,16 +75,6 @@ header {
 .films {
     margin-top: 20px;
     padding: 0;
-}
-
-.films-ttl {
-    text-align: left;
-    font-family: Open Sans;
-    font-weight: bold;
-    font-size: 32px;
-    color: #ffffff;
-    line-height: 49px;
-    margin: 100px 0 0 0;
 }
 
 .film-img {

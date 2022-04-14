@@ -35,13 +35,17 @@
 				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 					<div class="menu">
 						<ul class="navbar-nav">
-							<li class="nav-item">Фильмы</li>
-							<li class="nav-item">Сеансы</li>
-							<li class="nav-item">Акции</li>
-							<li class="nav-item">Адрес</li>
+							<a class="navbar-link " href="#films">
+								Фильмы
+							</a>
+							<a class="navbar-link " href="#sessions">
+								Сеансы
+							</a>
+							<a class="navbar-link " href="#contacts">
+								Контакты
+							</a>
 						</ul>
 					</div>
-
 				</div>
 			</nav>
 		</div>
@@ -55,11 +59,11 @@
 
 	<!-- В прокате -->
 	<div class="container">
-		<div class="films-ttl">СЕЙЧАС В ПРОКАТЕ</div>
+		<div class="films-ttl" id="films">СЕЙЧАС В ПРОКАТЕ</div>
 		<div class="row films">
 			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
 				<a href="file:///home/admin01/Documents/SUT/Frontend/project/film.html">
-					<div class="project-block">
+					<div class="film-block">
 						<img class="film-img" src="./img/film_1.jpg" />
 						<div class="film-rectangle"></div>
 						<div class="film-ttl">Мистер нокаут</div>
@@ -71,7 +75,7 @@
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
 				<a href="file:///home/admin01/Documents/SUT/Frontend/project/film.html">
-					<div class="project-block">
+					<div class="film-block">
 						<img class="film-img" src="./img/film_2.jpg" />
 						<div class="film-rectangle"></div>
 						<div class="film-ttl">Парящий тигр</div>
@@ -84,7 +88,7 @@
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
 				<a href="file:///home/admin01/Documents/SUT/Frontend/project/film.html">
-					<div class="project-block">
+					<div class="film-block">
 						<img class="film-img" src="./img/film_3.jpg" />
 						<div class="film-rectangle"></div>
 						<div class="film-ttl">Наемник</div>
@@ -100,11 +104,11 @@
 
 	<!-- Ближайшие сеансы -->
 	<div class="container">
-		<div class="films-ttl">БЛИЖАЙШИЕ СЕАНСЫ</div>
+		<div class="films-ttl" id="sessions">БЛИЖАЙШИЕ СЕАНСЫ</div>
 		<div class="row films">
 			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
 				<a href="file:///home/admin01/Documents/SUT/Frontend/project/film.html">
-					<div class="project-block">
+					<div class="film-block">
 						<img class="film-img" src="./img/film_1.jpg" />
 						<div class="film-rectangle"></div>
 						<div class="film-ttl">Мистер нокаут</div>
@@ -116,7 +120,7 @@
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
 				<a href="file:///home/admin01/Documents/SUT/Frontend/project/film.html">
-					<div class="project-block">
+					<div class="film-block">
 						<img class="film-img" src="./img/film_2.jpg" />
 						<div class="film-rectangle"></div>
 						<div class="film-ttl">Парящий тигр</div>
@@ -129,8 +133,8 @@
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
 				<a href="file:///home/admin01/Documents/SUT/Frontend/project/film.html">
-					<div class="project-block">
-						<img class="film-img" src="./img/film_3.jpg" />
+					<div class="film-block">
+						<img class="film-img" src="./img/film_3.jpg"/>
 						<div class="film-rectangle"></div>
 						<div class="film-ttl">Наемник</div>
 						<div class="film-description">Служба в армии с детства была мечтой Джеймса Рида, а зеленый берет
@@ -143,11 +147,9 @@
 		</div>
 	</div>
 
-	<!-- Скидки -->
-
 	<!-- Адрес -->
 	<div class="container">
-		<div class="contacts-ttl">КОНТАКТЫ</div>
+		<div class="contacts-ttl" id="contacts">КОНТАКТЫ</div>
 		<div class="row contacts">
 			<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
 				<div class="conctact-block">
@@ -184,7 +186,7 @@
 								fill="#E4AF00" />
 						</svg>
 					</div>
-					<div class="contact-ttl">ВРЕМЯ РАБОТЫ:</div>
+					<div class="contact-ttl">РЕЖИМ РАБОТЫ:</div>
 					<div class="contact-description">КРУГЛОСУТОЧНО</div>
 				</div>
 			</div>
@@ -201,6 +203,15 @@
 					<div class="contact-link">INFO@VIP.RU</div>
 				</div>
 			</div>
+			<div class="map-block">
+				<img class="map-img" src="./img/map.png"/>
+			</div>
+		</div>
+	</div>
+
+	<!-- Обратная связь -->
+	<div class="container">
+		<div class="contacts-ttl" id="contacts">ОБРАТНАЯ СВЯЗЬ</div>
 		</div>
 	</div>
 
