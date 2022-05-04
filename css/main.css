@@ -240,6 +240,76 @@ footer {
     color: #FFFFFF;
 }
 
+.feedback {
+    margin-top: 20px;
+}
+
+#feedback-txtbx {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    width: 701px;
+    height: 520px;
+    resize: none;
+
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+#feedback-err {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: #E4AF00;
+    display: none;
+}
+
+#feedback-btn {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 701px;
+}
+
+#feedback-out {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 701px;
+
+    font-size: 20px;
+    color: white;
+    word-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 992px) and (max-width: 1199px) {
     .contact-ttl {
         margin-top: 10px;
