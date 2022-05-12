@@ -19,3 +19,12 @@ function feedback_send() {
     var feedback_out = document.getElementById('feedback-out');
     feedback_out.innerHTML = result;
 }
+
+function img_mouse_over(img_id) {
+    var img_name = "./img/" + img_id + "_2.jpg";
+    document.getElementById(img_id).src = img_name;
+}
+function img_mouse_out(img_id) {
+    var img_name = "./img/" + img_id + "_1.jpg";
+    document.getElementById(img_id).src = img_name;
+}

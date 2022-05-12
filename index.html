@@ -7,6 +7,11 @@
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	
+	<script src="js/index.js"></script>
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
 	<title>Афиша</title>
 </head>
@@ -16,7 +21,7 @@
 	<header>
 		<div class="container">
 			<nav class="navbar navbar-expand-lg">
-				<a class="navbar-brand" href="file:///home/admin01/Documents/SUT/Frontend/project/index.html">
+				<a class="navbar-brand" href="./index.html">
 					<div class="logo">
 						<svg width="49" height="53" viewBox="0 0 49 53" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
@@ -62,9 +67,9 @@
 		<div class="films-ttl" id="films">СЕЙЧАС В ПРОКАТЕ</div>
 		<div class="row films">
 			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-				<a href="file:///home/admin01/Documents/SUT/Frontend/project/film.html">
+				<a href="./film.html">
 					<div class="film-block">
-						<img class="film-img" src="./img/film_1.jpg" />
+						<img id="film_1" class="film-img" src="./img/film_1_1.jpg" onmouseover="img_mouse_over('film_1')" onmouseout="img_mouse_out('film_1')"/>
 						<div class="film-rectangle"></div>
 						<div class="film-ttl">Мистер нокаут</div>
 						<div class="film-description">Фильм Артема Михалкова о жизни легендарного советского боксера
@@ -74,22 +79,22 @@
 				</a>
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-				<a href="file:///home/admin01/Documents/SUT/Frontend/project/film.html">
+				<a href="./film.html">
 					<div class="film-block">
-						<img class="film-img" src="./img/film_2.jpg" />
+						<img id="film_2" class="film-img" src="./img/film_2_1.jpg" onmouseover="img_mouse_over('film_2')" onmouseout="img_mouse_out('film_2')"/>
 						<div class="film-rectangle"></div>
 						<div class="film-ttl">Парящий тигр</div>
 						<div class="film-description">Приключенческий фильм о любви к братьям нашим меньшим и единении с
-							природойю
+							природой
 							Экранизация одноименного бестселлера популярной американской детской писательницы Кейт
 							Дикамилло</div>
 					</div>
 				</a>
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-				<a href="file:///home/admin01/Documents/SUT/Frontend/project/film.html">
+				<a href="./film.html">
 					<div class="film-block">
-						<img class="film-img" src="./img/film_3.jpg" />
+						<img id="film_3" class="film-img" src="./img/film_3_1.jpg" onmouseover="img_mouse_over('film_3')" onmouseout="img_mouse_out('film_3')"/>
 						<div class="film-rectangle"></div>
 						<div class="film-ttl">Наемник</div>
 						<div class="film-description">Служба в армии с детства была мечтой Джеймса Рида, а зеленый берет
@@ -107,9 +112,9 @@
 		<div class="films-ttl" id="sessions">БЛИЖАЙШИЕ СЕАНСЫ</div>
 		<div class="row films">
 			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-				<a href="file:///home/admin01/Documents/SUT/Frontend/project/film.html">
+				<a href="./film.html">
 					<div class="film-block">
-						<img class="film-img" src="./img/film_1.jpg" />
+						<img id="seanse_img_1" class="film-img" src="./img/film_1_1.jpg" />
 						<div class="film-rectangle"></div>
 						<div class="film-ttl">Мистер нокаут</div>
 						<div class="film-description">Фильм Артема Михалкова о жизни легендарного советского боксера
@@ -119,9 +124,9 @@
 				</a>
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-				<a href="file:///home/admin01/Documents/SUT/Frontend/project/film.html">
+				<a href="./film.html">
 					<div class="film-block">
-						<img class="film-img" src="./img/film_2.jpg" />
+						<img id="seanse_img_2" class="film-img" src="./img/film_2_1.jpg" />
 						<div class="film-rectangle"></div>
 						<div class="film-ttl">Парящий тигр</div>
 						<div class="film-description">Приключенческий фильм о любви к братьям нашим меньшим и единении с
@@ -132,9 +137,9 @@
 				</a>
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-				<a href="file:///home/admin01/Documents/SUT/Frontend/project/film.html">
+				<a href="./film.html">
 					<div class="film-block">
-						<img class="film-img" src="./img/film_3.jpg"/>
+						<img id="seanse_img_3" class="film-img" src="./img/film_3_1.jpg"/>
 						<div class="film-rectangle"></div>
 						<div class="film-ttl">Наемник</div>
 						<div class="film-description">Служба в армии с детства была мечтой Джеймса Рида, а зеленый берет
@@ -230,11 +235,6 @@
 			</div>
 		</div>
 	</footer>
-
-	<script src="js/index.js"></script>
-	<script src="js/jquery-3.3.1.slim.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 /* Постер */
-.poster-img {
+#poster-img {
     /* background: url("../img/film_1.jpg") no-repeat; */
     -moz-background-size: 100%;
     /* Firefox 3.6+ */
