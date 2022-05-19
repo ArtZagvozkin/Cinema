@@ -1,3 +1,21 @@
+#date-time-block {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 100px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 33px;
+}
+
+#delay {
+    width: 320px;
+}
+
+#delay-label {
+    color: white;
+}
+
+
 /* Постер */
 #poster-img {
     /* background: url("../img/film_1.jpg") no-repeat; */

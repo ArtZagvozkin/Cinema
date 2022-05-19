@@ -17,7 +17,7 @@
 	<title>Мистер нокаут</title>
 </head>
 
-<body>
+<body onload="load_page()">
 	<!-- Меню -->
 	<header>
 		<div class="container">
@@ -53,6 +53,8 @@
 						</ul>
 					</div>
 				</div>
+				<div id="date-time-block">
+				</div>
 			</nav>
 		</div>
 	</header>
@@ -62,7 +64,12 @@
 		<div class="row">
 			<!-- Постер -->
 			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-				<img id="poster-img" src="./img/film_1_1.jpg" onmouseover="poster_mouse_over()"/>
+				<img id="poster-img" src="./img/film_1_1.jpg" onmouseover="change_poster()"/>
+				<div>
+					<!-- <div class="description-property">Смена изображений:</div> -->
+					<input type="range" id="delay" min="0.1" max="5.1" step="0.1" oninput="change_delay(this.value)">
+					<label id="delay-label">∞</label>
+				</div>
 			</div>
 
 			<!-- Описание -->

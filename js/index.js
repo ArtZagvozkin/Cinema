@@ -16,12 +16,33 @@ function feedback_send() {
 
     //filter forbidden words
     var result = input;
-    result = result.replace(/баба/gi, '');
+    result = result.replace(/короче/gi, ''); 
+    result = result.replace(/папка/gi, ''); 
+    result = result.replace(/мобила/gi, ''); 
+    result = result.replace(/питон/gi, ''); 
+    result = result.replace(/клава/gi, '');
+    result = result.replace(/бонч/gi, ''); 
+    result = result.replace(/кортаны/gi, '');
+    result = result.replace(/питер/gi, ''); 
+    result = result.replace(/моник/gi, ''); 
+    result = result.replace(/шаурма/gi, ''); 
+    result = result.replace(/ноут/gi, ''); 
+    result = result.replace(/комп/gi, '');
+    result = result.replace(/подъезд/gi, '');
+    result = result.replace(/нету/gi, ''); 
+    result = result.replace(/оперативка/gi, '');
+    result = result.replace(/шарага/gi, '');
+    result = result.replace(/видюха/gi, '');
+    result = result.replace(/проц/gi, '');
+    result = result.replace(/музло/gi, '');
+    result = result.replace(/кинчик/gi, '');
+
     if (result != input) {
         message += message !== "" ? "<br/>" : "";
         message += "Warn: Форма ввода содержит запрещенные слова!!!";
         input = result;
     }
+
 
     //url filter
     result = input.replace(/http:\/\/\S{0,}/gi, '');
