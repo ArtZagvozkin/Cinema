@@ -9,15 +9,17 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/film.css">
 
-	<script src="js/film.js"></script>
-	<script src="js/jquery-3.3.1.slim.min.js"></script>
+	<!-- <script src="js/jquery-3.3.1.slim.min.js"></script> -->
+	<script src="js/jquery-1.5.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/film.js"></script>
 
 	<title>Мистер нокаут</title>
 </head>
 
 <body onload="load_page()">
+
 	<!-- Меню -->
 	<header>
 		<div class="container">
@@ -333,7 +335,8 @@
 			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
 				<a href="./film.html">
 					<div class="film-block">
-						<img id="film_1" class="film-img" src="./img/film_1_1.jpg" onmouseover="img_mouse_over('film_1')" onmouseout="img_mouse_out('film_1')"/>
+						<img class="film-img" src="./img/film_1_1.jpg"/>
+						<img class="film-img-back" src="./img/film_1_2.jpg"/>
 						<div class="film-rectangle"></div>
 						<div class="film-ttl">Мистер нокаут</div>
 						<div class="film-description">Фильм Артема Михалкова о жизни легендарного советского боксера
@@ -345,7 +348,8 @@
 			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
 				<a href="./film.html">
 					<div class="film-block">
-						<img id="film_2" class="film-img" src="./img/film_2_1.jpg" onmouseover="img_mouse_over('film_2')" onmouseout="img_mouse_out('film_2')"/>
+						<img class="film-img" src="./img/film_2_1.jpg"/>
+						<img class="film-img-back" src="./img/film_2_2.jpg"/>
 						<div class="film-rectangle"></div>
 						<div class="film-ttl">Парящий тигр</div>
 						<div class="film-description">Приключенческий фильм о любви к братьям нашим меньшим и единении с
@@ -358,7 +362,8 @@
 			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
 				<a href="./film.html">
 					<div class="film-block">
-						<img id="film_3" class="film-img" src="./img/film_3_1.jpg" onmouseover="img_mouse_over('film_3')" onmouseout="img_mouse_out('film_3')"/>
+						<img class="film-img" src="./img/film_3_1.jpg"/>
+						<img class="film-img-back" src="./img/film_3_2.jpg"/>
 						<div class="film-rectangle"></div>
 						<div class="film-ttl">Наемник</div>
 						<div class="film-description">Служба в армии с детства была мечтой Джеймса Рида, а зеленый берет
@@ -368,6 +373,18 @@
 					</div>
 				</a>
 			</div>
+
+			<!-- Анимированная смена изображений -->
+			<script>
+				$('.film-block').hover(
+					function() {
+					    $(this).find('img:eq(1)').stop(true,true).fadeIn();
+					},
+					function() {
+					    $(this).find('img:eq(1)').stop(true,true).fadeOut();
+					}
+				);
+			</script>
 		</div>
 	</div>
 
@@ -377,9 +394,9 @@
 			<div class="footer-block">
 				<div class="footer-txt">© 2022 Киноафиша</div>
 				<div class="footer-txt">Загвозкин Артём Павлович</div>
+				<div class="footer-txt">Зябкин Денис Сергеевич</div>
 			</div>
 		</div>
 	</footer>
 </body>
-
 </html>

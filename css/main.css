@@ -87,6 +87,10 @@ header {
     margin: 100px 0 0 0;
 }
 
+.film-block {
+    position: relative;
+}
+
 .film-img {
     /* background: url("../img/film_1.jpg") no-repeat; */
     -moz-background-size: 100%;
@@ -99,6 +103,26 @@ header {
     /* Современные браузеры */
     width: 350px;
     height: 505px;
+    
+    /* position: relative; */
+}
+
+.film-img-back {
+    /* background: url("../img/film_1.jpg") no-repeat; */
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    /* Современные браузеры */
+    width: 350px;
+    height: 505px;
+
+    display: none;
+    position: absolute;
+    left: 0;
 }
 
 .film-rectangle {

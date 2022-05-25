@@ -10,7 +10,7 @@ function load_page() {
 
 function update_date_time() {
     const date = new Date();
-    const [year, month, day] = [date.getFullYear(), date.getMonth(), date.getDay()];
+    const [year, month, day] = [date.getFullYear(), date.getMonth(), date.getDate()];
     const cur_date = day + get_month_name(month) + year;
 
     let [hour, min, sec] = [date.getHours(), date.getMinutes(), date.getSeconds()];
@@ -68,13 +68,4 @@ function change_poster() {
 
     file_name = "./img/" + String(cur_src).match(/film_\d_/) + file_num + ".jpg";
     poster.src = file_name;
-}
-
-function img_mouse_over(img_id) {
-    const img_name = "./img/" + img_id + "_2.jpg";
-    document.getElementById(img_id).src = img_name;
-}
-function img_mouse_out(img_id) {
-    const img_name = "./img/" + img_id + "_1.jpg";
-    document.getElementById(img_id).src = img_name;
 }
