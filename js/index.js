@@ -38,7 +38,7 @@ function feedback_send() {
     result = result.replace(/кинчик/gi, '');
 
     if (result != input) {
-        message += message !== "" ? "<br/>" : "";
+        message += message != "" ? "<br/>" : "";
         message += "Warn: Форма ввода содержит запрещенные слова!!!";
         input = result;
     }

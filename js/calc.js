@@ -18,27 +18,15 @@ function keyup_4(input) {
 }
 
 function real_filter(input, element_name) {
-    input = input
-        .replace(/[,]+/g, '.') // replace '.' to ','
-        .replace(/[^\d.-]*/g, '') // allow '0'-'9', '-' and '.'
-        .replace(/([.])[.]+/g, '$1') // drop '..'
-        .replace(/(\-\d{0,})\-+/g, '$1') // '-' - only first pos
-        .replace(/^[^\d-]*(\d+([.]\d{0,5})?).*$/g, '$1'); // drop '.*.'
-    if (input === '' || input === '.' || input === ',')
-        input = '0';
-    if (input === '-.') // drop '-.'
-        input = '-0.';
-    if (input[input.length - 1] !== '.' && input !== '-')
-        input *= 1;
-
+    input = input.match(/[+-]?([0-9]*(\.[0-9]*)?)/)[0];
     document.getElementById(element_name).value = input;
 }
 
 function integer_filter(input, element_name) {
     input = input
         .replace(/[^\d-]*/g, '') // allow '0'-'9' and '-'
-        .replace(/(\-\d{0,})\-+/g, '$1'); // '-' - only first pos
-    if (input === '')
+        .replace(/(\-[\d./]+)\-/g, '$1') // '-' - only first pos
+    if (input == '')
         input = '0';
 
     document.getElementById(element_name).value = input;
