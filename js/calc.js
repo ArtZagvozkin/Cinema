@@ -38,19 +38,19 @@ function calc() {
     var input_3 = document.getElementById('inp_3').value;
     var input_4 = document.getElementById('inp_4').value;
 
-    if (input_1 === '' || input_1 === '-' || input_1 === '0.' || input_1 === '-0.') {
+    if (input_1 == '' || input_1 == '-' || input_1 == '0.' || input_1 == '-0.') {
         input_1 = 0;
         document.getElementById('inp_1').value = 0;
     }
-    if (input_2 === '' || input_2 === '-' || input_2 === '0.' || input_2 === '-0.') {
+    if (input_2 == '' || input_2 == '-' || input_2 == '0.' || input_2 == '-0.') {
         input_2 = 0;
         document.getElementById('inp_2').value = 0;
     }
-    if (input_3 === '' || input_3 === '-' || input_3 === '0.' || input_3 === '-0.') {
+    if (input_3 == '' || input_3 == '-' || input_3 == '0.' || input_3 == '-0.') {
         input_3 = 0;
         document.getElementById('inp_3').value = 0;
     }
-    if (input_4 === '' || input_4 === '-' || input_4 === '0.' || input_4 === '-0.') {
+    if (input_4 == '' || input_4 == '-' || input_4 == '0.' || input_4 == '-0.') {
         input_4 = 0;
         document.getElementById('inp_4').value = 0;
     }
